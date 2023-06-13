@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const {sequelize , connectToDb} = require('../config/db');
+const {sequelize} = require('../config/db');
 const User = require('./User');
 const Group = require('./Group');
 
@@ -20,6 +20,11 @@ const UserGroup = sequelize.define('UserGroup', {
   isOwner: {
     type: DataTypes.BOOLEAN,
     defaultValue: false
+  },
+  permissions: {
+    type: DataTypes.JSON,
+    allowNull: false,
+    defaultValue: {}
   },
   group_id: {
     type: DataTypes.INTEGER,
