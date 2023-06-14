@@ -5,17 +5,17 @@ import { RouterView } from 'vue-router';
 
 <template>
   <div>
-    <NavBar />
+    <NavBarHome />
     <RouterView />
   </div>
 </template>
 
 <script>
-const NavBar = defineAsyncComponent(() =>
-  import('../components/NavBar.vue')
-)
+const NavBarHome = defineAsyncComponent(() =>
+  import("../components/NavBarHome.vue")
+);
 export default {
   name: 'HomeView',
-  components: { NavBar },
+  components: { NavBarHome },
 }
 </script>

@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'product': "url('/images/productImg.jpg')",
+      }
+    },
     fontFamily: {
       'navBar': ['Quicksand','-apple-system','"system-ui"','"Segoe UI"','Roboto','"Helvetica Neue"','Arial','sans-serif']
     },

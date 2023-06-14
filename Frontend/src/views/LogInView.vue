@@ -71,7 +71,7 @@ export default {
       const token = authStore.token;
       if (token !== "") {
         // Đăng nhập thành công, thực hiện các hành động khác
-        this.$router.push("/");
+        this.$router.push("/board");
       } else {
         // Xử lý lỗi đăng nhập
         this.errors.push("Invalid username or password");
